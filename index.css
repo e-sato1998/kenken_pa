@@ -54,8 +54,9 @@ li {
   
   
   .btn-wrapper {
+
     text-align: center;
-    margin: 10% 0;
+    margin:  0;
   }
   
   .btn-wrapper p {
@@ -113,17 +114,18 @@ li {
 
 
 
-  footer{
-
-    position: relative;
-    z-index: 2;
-    background-size: cover;
-    margin-top: 0;
+        footer{
+            background-image: url(https://tigpig.com/wp-content/2011/06/110607_1200_tigpig_800_200_a.jpg);
+            background-size: cover;
+            padding: 5%;
   }
+
+  
 
   h5 {
     text-align: center;
     margin-top: 10%;
+    padding:0;
   }
 
   
