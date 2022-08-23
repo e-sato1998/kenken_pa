@@ -1,3 +1,129 @@
-header h1 {
-    color: #CC6699;
+
+body {
+    margin: 0;
 }
+
+header{
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'MS Ｐゴシック','MS PGothic'; 
+    text-align: center;
+    color: #D2B48Cff;
+    margin: 2%;
+}
+
+header h1{
+font-size: 60px;
+}
+
+header h2{
+font-size: 30px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+main h3{
+    color:#CC6666;
+    text-align: center;
+    font-family:  'Caveat', cursive;;
+    font-size: 300%;
+    margin: 5%;
+}
+
+.desert {
+    list-style:none;
+    margin:5%;
+}
+
+li {
+    display: inline;
+}
+
+/* リンクボタン */
+
+.btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-image: url(https://pbs.twimg.com/media/FawLA1DUsAA6paX?format=jpg&name=small);
+  }
+
+.btn:hover {
+    opacity: 1;
+  }
+  
+  
+  .btn-wrapper {
+    text-align: center;
+    margin: 10% 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+
+  
+
+
+
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  
+    
+     header h1{
+        font-size: 40px;
+    }
+
+    header h2{
+        font-size: 20px;
+        }
+
+    main h3{
+        font-size: 25px;
+    }
+    
+    }
+    
+    
+    
+    /* スマホ向けレイアウト */
+    @media all and (max-width: 670px) {
+ 
+    
+       header h1{
+        font-size: 25px;
+        }
+
+        header h2{
+            font-size: 13px;
+            }
+
+        main h3{
+            font-size: 15px;
+        }
+    }
+    
+        
+        /*========= ページトップのためのCSS ===============*/
+
+
+
+
+
+
+
+
+  footer{
+
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+    margin-top: 0;
+  }
+
+  h5 {
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  
