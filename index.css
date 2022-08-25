@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    
 }
 
 header{
@@ -12,11 +13,91 @@ header{
 
 header h1{
 font-size: 60px;
+margin-bottom: 0;
 }
 
 header h2{
 font-size: 30px;
+margin-top: 0;
 }
+
+.fuwafuwa {
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+  background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 30%;
+  height: 30%;
+  margin-top: 15px;
+}
+ 
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+  
+  
+/*==================================================
+スライダーのためのcss
+===================================*/
+
+
+
+/*大きい画像の設定*/
+main img {
+  padding: 0;
+  margin:auto;
+  width: 55%;/*画像の大きさを変える*/
+	vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+
+/*メイン画像下に余白をつける*/
+.gallery{
+	margin:0 0 5px 0;
+}
+
+.gallery li{
+list-style:none;
+}
+
+/*選択するサムネイル画像の設定*/
+
+.choice-btn li{
+	cursor: pointer;
+	outline: none;
+list-style:none;
+margin: 0;
+display:inline;
+}
+
+.choice-btn li img{
+	opacity: 0.4;/*選択されていないものは透過40%*/
+  margin: 0;
+  display:inline;
+  width: 100%;
+}
+
+.choice-btn li.slick-current img{
+	opacity: 1;/*選択されているものは透過しない*/
+  margin: 0;
+  display:inline;
+  width: 100%;
+}
+
+.size { /*小さいほうの画像要素*/
+  padding: 0 9%; /*中央に配置*/
+  width: 80%;
+  height: 40%;
+}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
@@ -24,8 +105,7 @@ main h3{
     color:#CC6666;
     text-align: center;
     font-family:  'Caveat', cursive;;
-    font-size: 300%;
-    margin: 5%;
+    font-size: 50px;
 }
 
 .desert {
@@ -33,38 +113,13 @@ main h3{
     margin:5%;
 }
 
+ul{
+    display:block;
+    text-align: center;
+}
 li {
     display: inline;
 }
-
-/* リンクボタン */
-
-.btn {
-    padding: 8px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-    background-image: url(https://pbs.twimg.com/media/FawLA1DUsAA6paX?format=jpg&name=small);
-  }
-
-.btn:hover {
-    opacity: 1;
-  }
-  
-  
-  .btn-wrapper {
-
-    text-align: center;
-    margin:  0;
-  }
-  
-  .btn-wrapper p {
-    margin: 10px 0;
-  }
-
-  
-
 
 
 /* タブレット向けレイアウト */
@@ -82,6 +137,14 @@ li {
     main h3{
         font-size: 25px;
     }
+
+    .buydesert h4,p{
+        font-size: 28px;
+    }
+
+    footer h6 {
+        font-size: 10px;
+      }
     
     }
     
@@ -102,30 +165,74 @@ li {
         main h3{
             font-size: 15px;
         }
+
+        .buydesert h4,p{
+            font-size: 14px;
+        }
+
+        footer h6 {
+            font-size: 5px;
+          }
+
+
     }
     
+    .buydesert {
+        font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'MS Ｐゴシック','MS PGothic'; 
+        text-align: center;
+        font-size: 40px;
+        color: #D2B48Cff;
         
-        /*========= ページトップのためのCSS ===============*/
+    }
+
+    .buydesert img {
+       animation: poyopoyo 2s ease-out infinite;
+       opacity: 1;
+}
+
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
+}
+    
+    
+    .btn {
+        color: #D2B48Cff;
+        margin-top: 5%;
+
+    }
+
+    .fa-twitter {
+        margin-right: 1%;
+        color: #1D9BF0;
+      
+    }
+
+    .fa-instagram {
+        margin-left: 10%;
+        margin-right: 1%;
+        color: #E11AB4;
+       
+    }
 
 
 
-
-
-
-
-
-        footer{
-            background-image: url(https://tigpig.com/wp-content/2011/06/110607_1200_tigpig_800_200_a.jpg);
-            background-size: cover;
-            padding: 5%;
+  footer img {
+    width: 30%;
   }
 
-  
-
-  h5 {
+  h6{
     text-align: center;
-    margin-top: 10%;
-    padding:0;
+    background-image: url(https://pbs.twimg.com/media/Fa4_HrPUcAAP6Nf?format=png&name=900x900);
+    background-position:bottom;
+    padding-top: 21%;
+    background-size: cover;
+    font-size: 15px;
+    margin-bottom: 0;
   }
 
   
