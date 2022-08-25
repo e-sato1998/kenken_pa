@@ -76,9 +76,28 @@
   
      
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://e-sato1998.github.io/kenken_pa/index.js"></script>
-<!--自作のJS-->
-<script src=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+          //上部画像の設定
+$('.gallery').slick({
+	infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+	fade: true, //フェードの有効化
+	arrows: true,//左右の矢印あり
+	prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+	nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+	asNavFor: '.choice-btn', //連動させるサムネイルのクラス名
+});
+
+//選択画像の設定
+$('.choice-btn').slick({
+	infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+	slidesToShow: 4, //表示させるスライドの数
+	focusOnSelect: true, //フォーカスの有効化
+	prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+	nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+	asNavFor: '.gallery', //連動させるスライドショーのクラス名
+});
+          </script>
 
 
 
