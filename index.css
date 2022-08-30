@@ -145,6 +145,7 @@ main img {
   margin:auto;
   width: 60%;/*画像の大きさを変える*/
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
+  border-radius: 30px;
 }
 
 
@@ -354,7 +355,9 @@ li {
      }
 
      .btn {
+      display: block;
        font-size: 17px;
+       
    }
  
  
